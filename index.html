@@ -246,10 +246,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-02-16 14:31:27 / 修改时间：22:21:33" itemprop="dateCreated datePublished" datetime="2024-02-16T14:31:27+08:00">2024-02-16</time>
+              <time title="创建时间：2024-02-16 14:31:27" itemprop="dateCreated datePublished" datetime="2024-02-16T14:31:27+08:00">2024-02-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-02-21 21:27:31" itemprop="dateModified" datetime="2024-02-21T21:27:31+08:00">2024-02-21</time>
+              </span>
 
           
 
@@ -262,7 +268,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><h3 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h3><h4 id="Java-中的⼏种基本数据类型是什么？对应的包装类型是什么？各⾃占⽤多少字节呢？"><a href="#Java-中的⼏种基本数据类型是什么？对应的包装类型是什么？各⾃占⽤多少字节呢？" class="headerlink" title="Java 中的⼏种基本数据类型是什么？对应的包装类型是什么？各⾃占⽤多少字节呢？"></a>Java 中的⼏种基本数据类型是什么？对应的包装类型是什么？各⾃占⽤多少字节呢？</h4><p>Java 中有 8 种基本数据类型，分别为：</p>
+          <h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><h3 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h3><h4 id="聊聊面向对象的三大特性"><a href="#聊聊面向对象的三大特性" class="headerlink" title="聊聊面向对象的三大特性"></a>聊聊面向对象的三大特性</h4><p>封装：将一个对象的状态和行为包装在一起，形成一个独立的单元，并对外界隐藏其内部实现的细节。</p>
+<p>继承：在已有类的基础上定义新的类，新类可以继承原有类的属性和方法。继承的主要作用是实现代码的重用和扩展。</p>
+<p>多态：同一操作作用于不同的对象，可以产生不同的结果。</p>
+<p>多态分为编译时多态和运行时多态，重载（overload）就是编译时多态的一个例子，编译时多态在编译时就已经确定，运行的时候调用的是确定的方法。我们通常所说的多态指的都是运行时多态，也就是编译时不确定究竟调用哪个具体方法，一直延迟到运行时才能确定。</p>
+<p>Java实现多态有 3 个必要条件：<strong>继承</strong>、<strong>重写</strong>和<strong>向上转型</strong>。只有满足这 3 个条件，开发人员才能够在同一个继承结构中使用统一的逻辑实现代码处理不同的对象，从而执行不同的行为。</p>
+<p>继承：在多态中必须存在有继承关系的子类和父类。</p>
+<p>重写：子类对父类中某些方法进行重新定义，在调用这些方法时就会调用子类的方法。</p>
+<p>向上转型：在多态中需要将子类的引用赋给父类对象，只有这样该引用才既能可以调用父类的方法，又能调用子类的方法。</p>
+<p><strong>引申：</strong>构造器是否可以被重写？</p>
+<p>答：构造器不能被继承，因此不能被重写，但可以被重载。每一个类必须有自己的构造函数，负责构造自己这部分的构造。子类不会覆盖父类的构造函数，相反必须一开始调用父类的构造函数。</p>
+<h4 id="Java-中的⼏种基本数据类型是什么？对应的包装类型是什么？各⾃占⽤多少字节呢？"><a href="#Java-中的⼏种基本数据类型是什么？对应的包装类型是什么？各⾃占⽤多少字节呢？" class="headerlink" title="Java 中的⼏种基本数据类型是什么？对应的包装类型是什么？各⾃占⽤多少字节呢？"></a>Java 中的⼏种基本数据类型是什么？对应的包装类型是什么？各⾃占⽤多少字节呢？</h4><p>Java 中有 8 种基本数据类型，分别为：</p>
 <ul>
 <li>6 种数字类型： <ul>
 <li>4 种整数型：<code>byte</code>、<code>short</code>、<code>int</code>、<code>long</code></li>
@@ -341,7 +357,7 @@
 <td>true、false</td>
 </tr>
 </tbody></table>
-<h4 id="String-、-StringBuffer-和-StringBuilder-的区别是什么-String-为什么是不可变的"><a href="#String-、-StringBuffer-和-StringBuilder-的区别是什么-String-为什么是不可变的" class="headerlink" title="String 、 StringBuffer 和 StringBuilder 的区别是什么? String 为什么是不可变的?"></a>String 、 StringBuffer 和 StringBuilder 的区别是什么? String 为什么是不可变的?</h4><p>三者的区别：</p>
+<h4 id="String-、-StringBuffer-和-StringBuilder-的区别是什么-String-为什么是不可变的"><a href="#String-、-StringBuffer-和-StringBuilder-的区别是什么-String-为什么是不可变的" class="headerlink" title="String 、 StringBuffer 和 StringBuilder 的区别是什么? String 为什么是不可变的?"></a>String 、 StringBuffer 和 StringBuilder 的区别是什么? String 为什么是不可变的?</h4><p><strong>三者的区别：</strong></p>
 <ol>
 <li><p>可变性</p>
 <p>String不可变</p>
@@ -353,9 +369,9 @@
 <p>​		String不可变，因此线程安全</p>
 <p>​		StringBuilder线程不安全（效率更高 适用于可变  且只需单线程访问的情况）</p>
 <p>​		StringBuffer是线程安全的，内部使用 synchronized 进行同步（适用于可变 多线程访问的情况）</p>
-<p>String为什么不可变：</p>
+<p><strong>String为什么不可变：</strong></p>
 <p>String类中使用<code>final</code>关键字修饰字符数组来保存字符串，同时没有提供&#x2F;暴露修改这个字符数组的方法。</p>
-<h4 id="String-s1-new-String-“abc”-这段代码创建了⼏个字符串对象？"><a href="#String-s1-new-String-“abc”-这段代码创建了⼏个字符串对象？" class="headerlink" title="String s1 &#x3D; new String(“abc”); 这段代码创建了⼏个字符串对象？"></a>String s1 &#x3D; new String(“abc”); 这段代码创建了⼏个字符串对象？</h4><p>会创建 1 或 2 个字符串对象。</p>
+<h4 id="String-s1-new-String-“abc”-这段代码创建了⼏个字符串对象？"><a href="#String-s1-new-String-“abc”-这段代码创建了⼏个字符串对象？" class="headerlink" title="String s1 &#x3D; new String(“abc”); 这段代码创建了⼏个字符串对象？"></a>String s1 &#x3D; new String(“abc”); 这段代码创建了⼏个字符串对象？</h4><p><strong>会创建 1 或 2 个字符串对象。</strong></p>
 <p>这里需要知道字符串常量池这个概念，<strong>字符串常量池</strong> 是 JVM 为了提升性能和减少内存消耗针对字符串（String 类）专门开辟的一块区域，主要目的是为了避免字符串的重复创建。</p>
 <p><img src="https://img-blog.csdnimg.cn/8a0c1c8b2f274d7d998d62f86e6d61e1.png" alt="img"></p>
 <img src="https://img-blog.csdnimg.cn/07a5bac4ce1743bcb6f856c903eb20b4.png" alt="img" style="zoom: 67%;" />
@@ -363,6 +379,403 @@
 <p>字符串常量池中存储了字符串常量对象及其引用。</p>
 <p>回到问题，当字符串常量池中不存在字符串对象“abc”的引用，那么它会在堆上创建两个字符串对象，其中一个字符串对象的引用会被保存在字符串常量池中。</p>
 <p>当字符串常量池中已存在字符串对象“abc”的引用，则只会在堆中创建 1 个字符串对象“abc”。</p>
+<h4 id="与equals？hashCode与equals？"><a href="#与equals？hashCode与equals？" class="headerlink" title="&#x3D;&#x3D;与equals？hashCode与equals？"></a>&#x3D;&#x3D;与equals？hashCode与equals？</h4><p><strong>&#x3D;&#x3D;与equals的区别：</strong></p>
+<p>对于基本数据类型，&#x3D;&#x3D;比较的是值；equals是Object中的方法，不能用于基本数据类型</p>
+<p>对于引用数据类型，&#x3D;&#x3D;比较的是对象的内存地址；而equals方法如果没有重写的话也是比较的对象的内存地址，一般都需要重写来比较对象中的属性是否相等。</p>
+<p><strong>hashCode与equals：</strong></p>
+<p>hashCode()方法用于获取对象的哈希码，从而确定该对象在哈希表中的索引位置。</p>
+<p>hashCode与equals其实都是为了比较两个对象是否相等：</p>
+<ul>
+<li><p>如果两个对象的<code>hashCode</code> 值相等，那这两个对象不一定相等（哈希碰撞）。</p>
+</li>
+<li><p>如果两个对象的<code>hashCode</code> 值相等并且<code>equals()</code>方法也返回 <code>true</code>，我们才认为这两个对象相等。</p>
+</li>
+<li><p>如果两个对象的<code>hashCode</code> 值不相等，我们就可以直接认为这两个对象不相等。</p>
+</li>
+</ul>
+<p>一般来说，重写equals方法也必须重写hashCode方法，如果不重写的话将对象放入HashSet、HashMap这些容器就会存在问题。</p>
+<h4 id="包装类型的缓存机制了解吗"><a href="#包装类型的缓存机制了解吗" class="headerlink" title="包装类型的缓存机制了解吗"></a>包装类型的缓存机制了解吗</h4><p>缓存机制指如果包装类的值在一定范围内，创建包装类对象时会直接返回缓存中的对象，否则需要创建新对象。</p>
+<p>Java 包装类缓存机制是通过静态成员变量来实现的。在 Integer、Long、Short、Byte、Character 这五个包装类中，定义了一个静态数组 cache[]，用于缓存常用的数值。</p>
+<p>Byte,Short,Integer,Long 这 4 种包装类默认创建了数值 [-128，127] 的相应类型的缓存数据，Character 创建了数值在 [0,127] 范围的缓存数据，Boolean 直接返回 True or False</p>
+<p>两种浮点数类型的包装类 Float,Double 并没有缓存机制。</p>
+<h4 id="深拷贝和浅拷贝了解吗？什么是引用拷贝？"><a href="#深拷贝和浅拷贝了解吗？什么是引用拷贝？" class="headerlink" title="深拷贝和浅拷贝了解吗？什么是引用拷贝？"></a>深拷贝和浅拷贝了解吗？什么是引用拷贝？</h4><img src="https://cdn.nlark.com/yuque/0/2022/png/12395513/1645626833433-d4524497-96c4-4c5f-bf92-fdd93e433d2b.png?x-oss-process=image%2Fresize%2Cw_916%2Climit_0" alt="image.png" style="zoom:67%;" />
+
+<p>拷贝一般分为二大类 <strong>引用拷贝</strong> 和 <strong>对象拷贝</strong>，我们通常讲的<code>深拷贝</code>和<code>浅拷贝</code>都属于<strong>对象拷贝</strong>，其区别在于：</p>
+<ul>
+<li>浅拷贝： 对基本数据类型进行值传递； 对引用类型，复制了一份引用类型的变量  里面存储的内存地址一样  指向的对象也一样</li>
+<li>深拷贝：对基本数据类型进行值传递，对引用数据类型，创建一个新的对象，并复制其内容，此为深拷贝。</li>
+</ul>
+<h4 id="Exception和Err有什么区别"><a href="#Exception和Err有什么区别" class="headerlink" title="Exception和Err有什么区别"></a>Exception和Err有什么区别</h4><p>在 Java 中，所有的异常都有一个共同的祖先 <code>java.lang</code> 包中的 <code>Throwable</code> 类。<code>Throwable</code> 类有两个重要的子类:</p>
+<ul>
+<li><code>Exception</code>：程序本身可以处理的异常，可以通过 <code>catch</code> 来进行捕获。<code>Exception</code> 又可以分为 Checked Exception (受检查异常，必须处理) 和 Unchecked Exception (不受检查异常，可以不处理)。</li>
+<li><code>Error</code>：<code>Error</code> 属于程序无法处理的错误 ，我们没办法通过 <code>catch</code> 来进行捕获不建议通过<code>catch</code>捕获 。例如 Java 虚拟机运行错误（<code>Virtual MachineError</code>）、虚拟机内存不够错误(<code>OutOfMemoryError</code>)、类定义错误（<code>NoClassDefFoundError</code>）等 。这些异常发生时，Java 虚拟机（JVM）一般会选择线程终止。</li>
+</ul>
+<p><strong>引申问题：JVM是如何处理异常的？</strong></p>
+<p>答：在一个方法中如果发生异常，这个方法会创建一个异常对象，并转交给 JVM，该异常对象包含异常名称，异常描述以及异常发生时应用程序的状态。创建异常对象并转交给 JVM 的过程称为抛出异常。可能有一系列的方法调用，最终才进入抛出异常的方法，这一系列方法调用的有序列表叫做调用栈。</p>
+<p>JVM 会顺着调用栈去查找看是否有可以处理异常的代码，如果有，则调用异常处理代码。当 JVM 发现可以处理异常的代码时，会把发生的异常传递给它。如果 JVM 没有找到可以处理该异常的代码块，JVM 就会将该异常转交给默认的异常处理器（默认处理器为 JVM 的一部分），默认异常处理器打印出异常信息并终止应用程序。</p>
+<h4 id="Java-反射？反射有什么缺点？你是怎么理解反射的（为什么框架需要反射）？"><a href="#Java-反射？反射有什么缺点？你是怎么理解反射的（为什么框架需要反射）？" class="headerlink" title="Java 反射？反射有什么缺点？你是怎么理解反射的（为什么框架需要反射）？"></a>Java 反射？反射有什么缺点？你是怎么理解反射的（为什么框架需要反射）？</h4><p><strong>什么是反射：</strong>反射是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性。这种动态获取信息以及动态调用对象的方法的功能称为java的反射机制。</p>
+<p><strong>反射的优缺点：</strong>反射可以让我们的代码更加灵活、为各种框架提供开箱即用的功能提供了便利。</p>
+<p>不过，反射让我们在运行时有了分析操作类的能力的同时，也增加了安全问题，比如可以无视泛型参数的安全检查（泛型参数的安全检查发生在编译时）。另外，反射的性能也要稍差点。</p>
+<p><strong>为什么框架需要反射：</strong></p>
+<ol>
+<li>动态加载类：框架需要能够在运行时加载和使用未知的类，而不需要在编译时将这些类直接引入代码中。通过反射，框架可以根据配置文件或用户输入来动态加载所需的类，从而提供更大的灵活性和可扩展性。</li>
+<li>运行时判断和操作类的成员：框架可能需要在运行时检查类的字段、方法、构造函数等成员，并根据需要对它们进行操作。反射提供了获取和修改类成员的能力，使得框架可以在运行时动态地执行这些操作。</li>
+<li>实现通用代码：框架通常需要编写通用的、适用于各种类的代码，而不是针对特定类进行硬编码。通过反射，框架可以在不知道类具体信息的情况下，通过类的名称、方法签名等动态地调用相应的方法，实现通用的代码逻辑。</li>
+<li>注解处理：反射可以用于处理注解（Annotations）。框架可以使用反射来扫描类、方法或字段上的注解，并根据注解的信息来执行相应的逻辑。这种机制在许多框架中被广泛使用，例如依赖注入框架（如Spring）和对象关系映射框架（如Hibernate）。</li>
+</ol>
+<h4 id="Java-泛型了解么？什么是类型擦除？"><a href="#Java-泛型了解么？什么是类型擦除？" class="headerlink" title="Java 泛型了解么？什么是类型擦除？"></a>Java 泛型了解么？什么是类型擦除？</h4><p>泛型是 JDK1.5 的一个新特性，泛型就是将类型参数化，其在编译时才确定具体的参数。这种参数类型可以用在类、接口和方法的创建中，分别称为泛型类、泛型接口、泛型方法。泛型的主要目标是提高 Java 程序的类型安全编译时期就可以检查出因 Java 类型不正确导致的 ClassCastException 异常。</p>
+<p><strong>类型擦除：</strong>泛型是一种语法糖，泛型这种语法糖的基本原理是类型擦除。Java中的泛型基本上都是在编译器这个层次来实现的，也就是说：泛型只存在于编译阶段，而不存在于运行阶段。在编译后的 class 文件中，是没有泛型这个概念的。在编译后，泛型类型参数会被擦除为其上界或Object类型。</p>
+<h4 id="BIO，NIO，AIO有什么区别？"><a href="#BIO，NIO，AIO有什么区别？" class="headerlink" title="BIO，NIO，AIO有什么区别？"></a>BIO，NIO，AIO有什么区别？</h4><p>**BIO:**同步阻塞IO模型</p>
+<p>在应用程序发起read调用后，会一直阻塞，直到内核把数据拷贝到用户空间</p>
+<img src="https://oss.javaguide.cn/p3-juejin/6a9e704af49b4380bb686f0c96d33b81~tplv-k3u1fbpfcp-watermark.png" alt="图源：《深入拆解Tomcat & Jetty》" style="zoom:67%;" />
+
+<p><strong>NIO：</strong>同步非阻塞模型</p>
+<img src="https://oss.javaguide.cn/p3-juejin/bb174e22dbe04bb79fe3fc126aed0c61~tplv-k3u1fbpfcp-watermark.png" alt="图源：《深入拆解Tomcat & Jetty》" style="zoom:67%;" />
+
+<p>同步非阻塞 IO 模型中，应用程序会一直发起 read 调用，等待数据从内核空间拷贝到用户空间的这段时间里，线程依然是阻塞的，直到在内核把数据拷贝到用户空间。</p>
+<p>然而这种IO模型也存在一定的问题：<strong>应用程序不断进行 I&#x2F;O 系统调用轮询数据是否已经准备好的过程是十分消耗 CPU 资源的。</strong></p>
+<p>IO多路复用模型在一定程度上解决了这个问题：</p>
+<p>IO多路复用是指用单线程去监听多个IO通道的就绪状态，从而降低资源开销，并且IO多路复用可以避免同步非阻塞IO中轮询等待的问题，IO多路复用的具体实现有select、poll和epoll。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-c5d49f309b370b3b3029edea96c9f313_720w.webp" alt="img"></p>
+<p><strong>select&#x2F;poll：</strong></p>
+<p>select 实现多路复用的方式是，将已连接的 Socket 都放到一个<strong>文件描述符集合</strong>，然后调用 select 函数将文件描述符集合<strong>拷贝</strong>到内核里，让内核来检查是否有网络事件产生，检查的方式很粗暴，就是通过<strong>遍历</strong>文件描述符集合的方式，当检查到有事件产生后，将此 Socket 标记为可读或可写， 接着再把整个文件描述符集合<strong>拷贝</strong>回用户态里，然后用户态还需要再通过<strong>遍历</strong>的方法找到可读或可写的 Socket，然后再对其处理。</p>
+<p>但是 poll 和 select 并没有太大的本质区别，<strong>都是使用「线性结构」存储进程关注的 Socket 集合，因此都需要遍历文件描述符集合来找到可读或可写的 Socket，时间复杂度为 O(n)，而且也需要在用户态与内核态之间拷贝文件描述符集合</strong>，这种方式随着并发数上来，性能的损耗会呈指数级增长。</p>
+<p><strong>epoll：</strong></p>
+<p>1.epoll 在内核里使用<strong>红黑树来跟踪进程所有待检测的文件描述符</strong>，把需要监控的 socket 通过 <code>epoll_ctl()</code> 函数加入内核中的红黑树里，减少了内核和用户空间大量的数据拷贝和内存分配。</p>
+<p>2.epoll 使用<strong>事件驱动</strong>的机制，内核里<strong>维护了一个链表来记录就绪事件</strong>，当某个 socket 有事件发生时，通过<strong>回调函数</strong>内核会将其加入到这个就绪事件列表中，当用户调用 <code>epoll_wait()</code> 函数时，只会返回有事件发生的文件描述符的个数，不需要像 select&#x2F;poll 那样轮询扫描整个 socket 集合，大大提高了检测的效率。</p>
+<p>Java中的NIO可以实现IO多路复用模型，通过Selector和Channel来实现。</p>
+<p><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-buffer-selector.png" alt="Buffer、Channel和Selector三者之间的关系"></p>
+<p>首先需要创建一个Selector对象，然后将Channel注册到Selector上，并指定您关注的事件类型。接下来，使用Selector的select()方法等待就绪的事件。一旦事件就绪，您可以从Selector中获取已就绪的SelectionKey，然后处理相应的IO操作。</p>
+<h3 id="Java集合"><a href="#Java集合" class="headerlink" title="Java集合"></a>Java集合</h3><h4 id="说说-List-Set-Map-三者的区别？三者底层的数据结构？"><a href="#说说-List-Set-Map-三者的区别？三者底层的数据结构？" class="headerlink" title="说说 List,Set,Map 三者的区别？三者底层的数据结构？"></a>说说 List,Set,Map 三者的区别？三者底层的数据结构？</h4><p><code>List</code>存储的元素有序，可以重复；<code>set</code>存储的元素不可重复；Map存储的是K-V键值对，其中key不可重复，value可以重复。</p>
+<p><code>List</code>的底层数据结构有：</p>
+<ul>
+<li><code>ArrayList</code>：<code>Object[]</code> 数组。</li>
+<li><code>Vector</code>：<code>Object[]</code> 数组。</li>
+<li><code>LinkedList</code>：双向链表</li>
+</ul>
+<p><code>Set</code>的底层数据结构有：</p>
+<ul>
+<li><code>HashSet</code>(无序，唯一): 基于 <code>HashMap</code> 实现的，底层采用 <code>HashMap</code> 来保存元素。</li>
+<li><code>LinkedHashSet</code>: <code>LinkedHashSet</code> 是 <code>HashSet</code> 的子类，并且其内部是通过 <code>LinkedHashMap</code> 来实现的。</li>
+<li><code>TreeSet</code>(有序，唯一): 红黑树(自平衡的排序二叉树)。</li>
+</ul>
+<p><code>Map</code>的底层数据结构有：</p>
+<ul>
+<li><code>HashMap</code>：重要集合，后面具体分析</li>
+<li><code>LinkedHashMap</code>：在HashMap的基础上增加了一条双向链表，保持键值对的插入顺序。</li>
+<li><code>HashTable</code>：Map的早期实现，线程安全，性能不高</li>
+<li><code>TreeMap</code>：红黑树（自平衡的排序二叉树）。</li>
+</ul>
+<h4 id="集合的线程安全问题？"><a href="#集合的线程安全问题？" class="headerlink" title="集合的线程安全问题？"></a>集合的线程安全问题？</h4><p>线程不安全的集合包括：HashMap、ArrayList、LinkedList、HashSet、TreeSet、TreeMap</p>
+<p>线程安全的集合包括三类：</p>
+<p><img src="/image-20240219000021096.png" alt="image-20240219000021096"></p>
+<p>使用的较多的JUC包下面的线程安全集合类，包含三个关键词：Blocking、CopyOnWrite、Concurrent：</p>
+<ul>
+<li>Blocking大部分基于锁实现，并提供用来阻塞的方法</li>
+<li>CopyOnWrite 之类容器的意思是写时复制，底层实现采用了 写入时拷贝 的思想，增删改操作会将容器底层存储结构拷贝一份，更改操作在新容器上执行，这时不影响其它线程的<strong>并发读</strong>，<strong>读写分离</strong>。 </li>
+<li>Concurrent类容器一般在内部采用CAS优化，可以提供较高的吞吐量</li>
+</ul>
+<h4 id="HashMap解析"><a href="#HashMap解析" class="headerlink" title="HashMap解析"></a>HashMap解析</h4><h5 id="HashMap底层实现"><a href="#HashMap底层实现" class="headerlink" title="HashMap底层实现"></a>HashMap底层实现</h5><p>JDK1.8 之前 HashMap 由 数组+链表 组成的，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的（“拉链法”解决冲突）。 JDK1.8 以后的 <code>HashMap</code> 在解决哈希冲突时有了较大的变化，当链表长度大于等于阈值（默认为 8）（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树）时，将链表转化为红黑树，以减少搜索时间。</p>
+<p>JDK1.8前：</p>
+<img src="https://img-blog.csdnimg.cn/img_convert/184e6328ba81b66728f8947bd61cf53d.png" alt="184e6328ba81b66728f8947bd61cf53d.png" style="zoom: 80%;" />
+
+<p>JDK1.8后：</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/ea56af9d9cc78fd226e66d2b11d59ab5.png" alt="ea56af9d9cc78fd226e66d2b11d59ab5.png"></p>
+<p><strong>引申问题：为什么要用红黑树？</strong></p>
+<p>红黑树是一颗自平衡二叉树，主要是避免 hash 冲突导致链表的长度过长，这样 get 的时候时间复杂度严格来说就不是 O(1) 了，因为可能需要遍历链表来进行查找。</p>
+<h5 id="HashMap容量大小"><a href="#HashMap容量大小" class="headerlink" title="HashMap容量大小"></a>HashMap容量大小</h5><p>HashMap 默认的初始化大小为16  之后每次扩充，容量变为原来的 2 倍  若给定了容量初始值 则会扩充为2的幂次方大小</p>
+<p>哈希表的key-value键值对（Entry)     利用散列函数对key计算hash值  然后通过数组大小 n-1 &amp; hash 值之后  得到目标元素的存储位置（例如数组下标） 然后在该位置存储或者提取key-value</p>
+<p><strong>引申问题：为什么HashMap的容量是2的幂次？</strong></p>
+<p>因为数组下标的计算公式用的是 i &#x3D; (n - 1) &amp; hash，即位运算，一般我们能想到的是 %（取余）计算，但相比于位运算而言，效率比较低，所以用位运算。当n是2的幂次时，满足公式(n-1)&amp;hash&#x3D;hash%n，因此n是2的幂次。</p>
+<p><strong>引申问题：什么时候需要扩容？</strong></p>
+<p>扩容操作和这些变量有关：capacity容量，loadFactor负载因子，threshold阈值&#x3D;容量*负载因子，超过阈值便会出发扩容。扩容也不是简单的把数组扩大，而是新创建一个数组是原来的2倍，然后把原数组的所有Entry都重新Hash一遍放到新的数组</p>
+<h5 id="HashMap的线程安全问题"><a href="#HashMap的线程安全问题" class="headerlink" title="HashMap的线程安全问题"></a>HashMap的线程安全问题</h5><p>JDK1.7 及之前版本的 <code>HashMap</code> 在多线程环境下扩容操作可能存在死循环问题，这是由于当一个桶位中有多个元素需要进行扩容时，多个线程同时对链表进行操作，头插法可能会导致链表中的节点指向错误的位置，从而形成一个环形链表，进而使得查询元素的操作陷入死循环无法结束。</p>
+<p>为了解决这个问题，JDK1.8 版本的 HashMap 采用了尾插法而不是头插法来避免链表倒置，使得插入的节点永远都是放在链表的末尾，避免了链表中的环形结构。但是还是不建议在多线程下使用 <code>HashMap</code>，因为多线程下使用 <code>HashMap</code> 还是会存在数据覆盖的问题。并发环境下，推荐使用 <code>ConcurrentHashMap</code> 。</p>
+<h4 id="ConcurrentHashMap解析"><a href="#ConcurrentHashMap解析" class="headerlink" title="ConcurrentHashMap解析"></a>ConcurrentHashMap解析</h4><h5 id="ConcurrentHashMap底层实现方式"><a href="#ConcurrentHashMap底层实现方式" class="headerlink" title="ConcurrentHashMap底层实现方式"></a>ConcurrentHashMap底层实现方式</h5><p>JDK1.7 的 <code>ConcurrentHashMap</code> 底层采用 <strong>分段的数组+链表</strong> 实现，JDK1.8 采用的数据结构跟 <code>HashMap1.8</code> 的结构一样，数组+链表&#x2F;红黑二叉树。<code>Hashtable</code> 和 JDK1.8 之前的 <code>HashMap</code> 的底层数据结构类似都是采用 <strong>数组+链表</strong> 的形式，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的；</p>
+<h5 id="ConcurrentHashMap实现线程安全的方式"><a href="#ConcurrentHashMap实现线程安全的方式" class="headerlink" title="ConcurrentHashMap实现线程安全的方式"></a>ConcurrentHashMap实现线程安全的方式</h5><ul>
+<li><strong>JDK1.7 分段锁</strong>  对整个桶数组进行了分割分段(Segment)，每一把锁只锁容器其中一部分数据，多线程访问容器里不同数据段的数据，就不会存在锁竞争，提高并发访问率。 这里的<code>Segment</code> 是继承自 <code>ReentrantLock</code>，叫分段锁。</li>
+<li><strong>JDK1.8</strong> 已经摒弃了 Segment 的概念，而是直接用 Node 数组+链表+红黑树的数据结构来实现，并发控制使用 <strong>synchronized 和 CAS</strong> 来操作。整个看起来就像是优化过且线程安全的 HashMap，synchronized 只锁定当前链表或红黑二叉树的首节点，这样只要 hash 不冲突，就不会产生并发，效率又提升 N 倍，并发度更大</li>
+</ul>
+<img src="https://cdn.nlark.com/yuque/0/2022/png/12395513/1648974998712-59df3d37-7aa8-4bea-a31a-4ae3777b0438.png?x-oss-process=image%2Fresize%2Cw_641%2Climit_0" alt="image.png" style="zoom: 80%;" />
+
+<h3 id="Java并发"><a href="#Java并发" class="headerlink" title="Java并发"></a>Java并发</h3><h4 id="什么是线程和进程-线程与进程的关系-区别及优缺点？"><a href="#什么是线程和进程-线程与进程的关系-区别及优缺点？" class="headerlink" title="什么是线程和进程?线程与进程的关系,区别及优缺点？"></a>什么是线程和进程?线程与进程的关系,区别及优缺点？</h4><p>进程是程序的一次执行过程，是系统运行程序的基本单位，因此进程是动态的。系统运行一个程序即是一个进程从创建，运行到消亡的过程。</p>
+<p>线程与进程相似，但线程是一个比进程更小的执行单位。一个进程在其执行的过程中可以产生多个线程。与进程不同的是同类的多个线程共享进程的<strong>堆</strong>和<strong>方法区</strong>资源，但每个线程有自己的<strong>程序计数器</strong>、<strong>虚拟机栈</strong>和<strong>本地方法栈</strong>，所以系统在产生一个线程，或是在各个线程之间作切换工作时，负担要比进程小得多，也正因为如此，线程也被称为轻量级进程。</p>
+<p><strong>进程与线程的关系：</strong></p>
+<img src="https://oss.javaguide.cn/github/javaguide/java/jvm/java-runtime-data-areas-jdk1.8.png" alt="Java 运行时数据区域（JDK1.8 之后）" style="zoom:80%;" />
+
+<p>从JVM的角度来说，一个进程中可以有多个线程，多个线程共享进程的<strong>堆</strong>和<strong>方法区 (JDK1.8 之后的元空间)<strong>资源，但是每个线程有自己的</strong>程序计数器</strong>、<strong>虚拟机栈</strong> 和 <strong>本地方法栈</strong>。</p>
+<p>优缺点：</p>
+<p>进程优点：地址空间独立，更加安全。缺点：上下文切换时开销大。</p>
+<p>线程优点：切换和调度的成本远小于进程。缺点：共享资源容易引发并发安全问题。</p>
+<h4 id="死锁产生的条件？如何预防和避免死锁？"><a href="#死锁产生的条件？如何预防和避免死锁？" class="headerlink" title="死锁产生的条件？如何预防和避免死锁？"></a>死锁产生的条件？如何预防和避免死锁？</h4><p>互斥条件：该资源任意一个时刻只由一个线程占用。</p>
+<p>请求与保持条件：一个线程因请求资源而阻塞时，对已获得的资源保持不放。</p>
+<p>不剥夺条件:线程已获得的资源在未使用完之前不能被其他线程强行剥夺，只有自己使用完毕后才释放资源。</p>
+<p>循环等待条件:若干线程之间形成一种头尾相接的循环等待资源关系。</p>
+<p><strong>如何预防死锁？</strong> 破坏死锁的产生的必要条件即可：</p>
+<ol>
+<li><strong>破坏请求与保持条件</strong>：一次性申请所有的资源。</li>
+<li><strong>破坏不剥夺条件</strong>：占用部分资源的线程进一步申请其他资源时，如果申请不到，可以主动释放它占有的资源。</li>
+<li><strong>破坏循环等待条件</strong>：靠按序申请资源来预防。按某一顺序申请资源，释放资源则反序释放。破坏循环等待条件。</li>
+</ol>
+<p><strong>如何避免死锁？</strong></p>
+<p>避免死锁就是在资源分配时，借助于算法（比如银行家算法）对资源分配进行计算评估，使其进入安全状态。</p>
+<h4 id="乐观锁和悲观锁了解么？如何实现乐观锁？"><a href="#乐观锁和悲观锁了解么？如何实现乐观锁？" class="headerlink" title="乐观锁和悲观锁了解么？如何实现乐观锁？"></a>乐观锁和悲观锁了解么？如何实现乐观锁？</h4><p>悲观锁总是假设最坏的情况，认为共享资源每次被访问就会出现问题，因此每次获取共享资源时都会上锁，只给一个线程使用，其他线程阻塞。</p>
+<p>乐观锁总是假设最好的情况，认为共享资源每次被访问的时候不会出现问题，线程可以不停地执行，无需加锁也无需等待，只是在提交修改的时候去验证对应的资源（也就是数据）是否被其它线程修改了。</p>
+<p>如何实现乐观锁：</p>
+<p>1.版本号</p>
+<p>2.CAS：CAS 的全称是 <strong>Compare And Swap（比较与交换）</strong> ，用于实现乐观锁，被广泛应用于各大框架中。CAS 的思想很简单，就是用一个预期值和要更新的变量值进行比较，两值相等才会进行更新。</p>
+<h4 id="说说-sleep-⽅法和-wait-⽅法区别和共同点"><a href="#说说-sleep-⽅法和-wait-⽅法区别和共同点" class="headerlink" title="说说 sleep() ⽅法和 wait() ⽅法区别和共同点?"></a>说说 sleep() ⽅法和 wait() ⽅法区别和共同点?</h4><p>共同点：都可以暂停线程的执行</p>
+<p>区别：</p>
+<ul>
+<li>sleep()操作不会释放锁，而wait()操作会释放锁</li>
+<li><code>wait()</code> 方法被调用后，线程不会自动苏醒，需要别的线程调用同一个对象上的 <code>notify()</code>或者 <code>notifyAll()</code> 方法。<code>sleep()</code>方法执行完成后，线程会自动苏醒，或者也可以使用 <code>wait(long timeout)</code> 超时后线程会自动苏醒。</li>
+<li>sleep()是Thread类的静态本地方法，wait()是Object类的本地方法</li>
+</ul>
+<h4 id="讲⼀下-JMM-Java-内存模型-。-volatile-关键字解决了什么问题？说说-synchronized-关键字和-volatile-关键字的区别。"><a href="#讲⼀下-JMM-Java-内存模型-。-volatile-关键字解决了什么问题？说说-synchronized-关键字和-volatile-关键字的区别。" class="headerlink" title="讲⼀下 JMM(Java 内存模型)。 volatile 关键字解决了什么问题？说说 synchronized 关键字和 volatile 关键字的区别。"></a>讲⼀下 JMM(Java 内存模型)。 volatile 关键字解决了什么问题？说说 synchronized 关键字和 volatile 关键字的区别。</h4><p>JMM是Java编程语言用来定义多线程程序中内存访问行为的规范。它决定了在多线程环境下，一个线程如何通过主内存与其他线程进行通信以及如何访问共享数据。</p>
+<p>volatile关键字可以保证变量的可见性和有序性。</p>
+<p><strong>可见性：</strong>声明为volatile的变量在每次写入时会把该线程对应的本地内存中放入共享变量刷新到主内存；在读取时会把线程对应的本地内存置为无效，从主内存中读取共享变量。</p>
+<p><strong>有序性：</strong>在volatile变量的写入操作之前的指令不会被重新排序到写入操作之后，同样，在volatile变量的读取操作之后的指令不会被重新排序到读取操作之前。</p>
+<p><code>synchronized</code> 关键字和 <code>volatile</code> 关键字是两个互补的存在，而不是对立的存在！</p>
+<ul>
+<li><code>volatile</code> 关键字是线程同步的轻量级实现，所以 <code>volatile</code>性能肯定比<code>synchronized</code>关键字要好 。但是 <code>volatile</code> 关键字只能用于变量而 <code>synchronized</code> 关键字可以修饰方法以及代码块 。</li>
+<li><code>volatile</code> 关键字能保证数据的可见性，但不能保证数据的原子性。<code>synchronized</code> 关键字两者都能保证。</li>
+<li><code>volatile</code>关键字主要用于解决变量在多个线程之间的可见性，而 <code>synchronized</code> 关键字解决的是多个线程之间访问资源的同步性。</li>
+</ul>
+<h4 id="Java-内存区域和-JMM-有何区别？"><a href="#Java-内存区域和-JMM-有何区别？" class="headerlink" title="Java 内存区域和 JMM 有何区别？"></a>Java 内存区域和 JMM 有何区别？</h4><p>JMM是Java多线程编程中的规范，定义了多线程程序中的内存访问行为。而Java内存区域是Java虚拟机在运行时划分的不同内存区域，用于存储不同类型的数据。JMM关注的是多线程程序的内存模型，而Java内存区域关注的是Java虚拟机的内存结构和管理。</p>
+<h4 id="happens-before-原则"><a href="#happens-before-原则" class="headerlink" title="happens before 原则"></a>happens before 原则</h4><p>happens before原则定义两个操作之间的内存可见性，如果A操作happens before B操作，则A操作的操作结果对于B操作是可见的。</p>
+<h4 id="synchronized-关键字的作⽤"><a href="#synchronized-关键字的作⽤" class="headerlink" title="synchronized 关键字的作⽤"></a>synchronized 关键字的作⽤</h4><p>synchronized主要用于解决多个线程之间访问资源的同步性，可以保证被它修饰的方法或者代码块在任意时刻只能有一个线程执行。</p>
+<h4 id="synchronized和reentrantLock的区别"><a href="#synchronized和reentrantLock的区别" class="headerlink" title="synchronized和reentrantLock的区别"></a>synchronized和reentrantLock的区别</h4><ol>
+<li>锁的实现：synchronized是JVM实现的，而ReentrantLock是JDK实现的</li>
+<li>ReentrantLock可以被中断，正在等待的线程可以选择放弃等待，改为处理其他事情。</li>
+<li><strong>可实现公平锁</strong> : <code>ReentrantLock</code>可以指定是公平锁还是非公平锁。</li>
+<li>ReentrantLock支持多个条件变量</li>
+</ol>
+<h4 id="synchronized关键字的底层原理"><a href="#synchronized关键字的底层原理" class="headerlink" title="synchronized关键字的底层原理"></a>synchronized关键字的底层原理</h4><p>synchronized基于对象监视器monitor来实现代码块同步，每个 Java 对象都可以关联一个 Monitor 对象，如果使用 synchronized 给对象上锁（重量级）之后，该对象头的Mark Word 中就被设置指向 Monitor 对象的指针。</p>
+<h4 id="ThreadLocal-关键字的作⽤，内存泄露问题"><a href="#ThreadLocal-关键字的作⽤，内存泄露问题" class="headerlink" title="ThreadLocal 关键字的作⽤，内存泄露问题"></a>ThreadLocal 关键字的作⽤，内存泄露问题</h4><p>ThreadLocal变量是线程的本地变量，线程安全。</p>
+<p>Thread类中存在ThreadLocalMap变量，ThreadLocalMap存储存储以<code>ThreadLocal</code>为 key ，Object 对象为 value 的键值对。</p>
+<p><img src="https://oss.javaguide.cn/github/javaguide/java/concurrent/threadlocal-data-structure.png" alt="ThreadLocal 数据结构"></p>
+<p>内存泄漏：对象已经没有被程序使用  但是因为还在被引用着 导致垃圾回收器没办法清除</p>
+<p><strong>ThreadLocal解决内存泄漏：</strong></p>
+<p>实际上 ThreadLocalMap 中使用的 key 为 ThreadLocal 的弱引用，弱引用的特点是，如果这个对象只存在弱引用，那么在下一次垃圾回收的时候必然会被清理掉。</p>
+<p>所以如果 ThreadLocal 没有被外部强引用的情况下，在垃圾回收的时候会被清理掉的，这样一来 ThreadLocalMap中使用这个 ThreadLocal 的 key 也会被清理掉。但是，value 是强引用，不会被清理，这样一来就会出现 key 为 null 的 value。</p>
+<p>ThreadLocalMap实现中已经考虑了这种情况，在调用 set()、get()、remove() 方法的时候，会清理掉 key 为 null 的记录。如果说会出现内存泄漏，那只有在出现了 key 为 null 的记录后，没有手动调用 remove() 方法，并且之后也不再调用 get()、set()、remove() 方法的情况下。</p>
+<h4 id="线程池有什么⽤？为什么不推荐使⽤内置线程池？"><a href="#线程池有什么⽤？为什么不推荐使⽤内置线程池？" class="headerlink" title="线程池有什么⽤？为什么不推荐使⽤内置线程池？"></a>线程池有什么⽤？为什么不推荐使⽤内置线程池？</h4><p>线程池就是管理一系列线程的资源池。当有任务要处理时，直接从线程池中获取线程来处理，处理完之后线程并不会立即被销毁，而是等待下一个任务。</p>
+<p>线程池的作用：</p>
+<ul>
+<li>降低资源消耗</li>
+<li>提高响应速度</li>
+<li>提高线程的可管理性</li>
+</ul>
+<p>创建线程池一般有两种方法：</p>
+<ol>
+<li><strong>通过<code>ThreadPoolExecutor</code>构造函数来创建（推荐）。</strong></li>
+</ol>
+<img src="https://javaguide.cn/assets/threadpoolexecutor%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0-UftlG_nP.png" alt="通过构造方法实现" style="zoom:80%;" />
+
+<p>   2.<strong>通过 <code>Executor</code> 框架的工具类 <code>Executors</code> 来创建。</strong></p>
+<p>​	Executors工具类提供了一些默认的线程池实现：</p>
+<ul>
+<li>**<code>FixedThreadPool</code>**：该方法返回一个固定线程数量的线程池。该线程池中的线程数量始终不变。当有一个新的任务提交时，线程池中若有空闲线程，则立即执行。若没有，则新的任务会被暂存在一个任务队列中，待有线程空闲时，便处理在任务队列中的任务。</li>
+<li><strong><code>SingleThreadExecutor</code>：</strong> 该方法返回一个只有一个线程的线程池。若多余一个任务被提交到该线程池，任务会被保存在一个任务队列中，待线程空闲，按先入先出的顺序执行队列中的任务。</li>
+<li><strong><code>CachedThreadPool</code>：</strong> 该方法返回一个可根据实际情况调整线程数量的线程池。初始大小为 0。当有新任务提交时，如果当前线程池中没有线程可用，它会创建一个新的线程来处理该任务。如果在一段时间内（默认为 60 秒）没有新任务提交，核心线程会超时并被销毁，从而缩小线程池的大小。</li>
+<li>**<code>ScheduledThreadPool</code>**：该方法返回一个用来在给定的延迟后运行任务或者定期执行任务的线程池。</li>
+</ul>
+<p>为什么不推荐使用内置线程池：</p>
+<p><code>Executors</code> 返回线程池对象存在一些弊端如下：</p>
+<ul>
+<li>**<code>FixedThreadPool</code> 和 <code>SingleThreadExecutor</code>**：使用的是无界的 <code>LinkedBlockingQueue</code>，任务队列最大长度为 <code>Integer.MAX_VALUE</code>,可能堆积大量的请求，从而导致 OOM。</li>
+<li>**<code>CachedThreadPool</code>**：使用的是同步队列 <code>SynchronousQueue</code>, 允许创建的线程数量为 <code>Integer.MAX_VALUE</code> ，如果任务数量过多且执行速度较慢，可能会创建大量的线程，从而导致 OOM。</li>
+<li><strong><code>ScheduledThreadPool</code> 和 <code>SingleThreadScheduledExecutor</code></strong> : 使用的无界的延迟阻塞队列<code>DelayedWorkQueue</code>，任务队列最大长度为 <code>Integer.MAX_VALUE</code>,可能堆积大量的请求，从而导致 OOM。</li>
+</ul>
+<h4 id="Java-线程池有哪些参数？阻塞队列有⼏种？拒绝策略有⼏种？"><a href="#Java-线程池有哪些参数？阻塞队列有⼏种？拒绝策略有⼏种？" class="headerlink" title="Java 线程池有哪些参数？阻塞队列有⼏种？拒绝策略有⼏种？"></a>Java 线程池有哪些参数？阻塞队列有⼏种？拒绝策略有⼏种？</h4><p><strong>线程池的参数：</strong></p>
+<ol>
+<li><code>corePoolSize(重要):</code>核心线程数，任务队列未达到队列容量时，最大可以同时运行的线程数量。</li>
+<li><code>maximumPoolSize(重要):</code>最大线程数，任务队列中存放的任务达到队列容量的时候，当前可以同时运行的线程数量变为最大线程数。</li>
+<li><code>workQueue(重要):</code>任务队列，新任务来的时候会先判断当前运行的线程数量是否达到核心线程数，如果达到的话，新任务就会被存放在队列中。</li>
+<li><code>keepAliveTime:</code>线程空闲时长，线程池中的线程数量大于 <code>corePoolSize</code> 的时候，如果这时没有新的任务提交，多余的空闲线程不会立即销毁，而是会等待，直到等待的时间超过了 <code>keepAliveTime</code>才会被回收销毁。</li>
+<li><code>unit:</code> <code>keepAliveTime</code> 参数的时间单位。</li>
+<li><strong><code>threadFactory</code></strong> :executor 创建新线程的时候会用到。</li>
+<li><strong><code>handler</code></strong> :拒绝策略。当线程数达到最大线程数时就要执行饱和策略。</li>
+</ol>
+<h4 id="线程池处理任务的流程了解吗？"><a href="#线程池处理任务的流程了解吗？" class="headerlink" title="线程池处理任务的流程了解吗？"></a>线程池处理任务的流程了解吗？</h4><img src="image-20240220152016280.png" alt="image-20240220152016280" style="zoom:80%;" />
+
+<p>文字描述：</p>
+<ol>
+<li>向线程池提交任务时，如果线程池中的线程数小于核心线程数，则会创建一个新线程执行任务；</li>
+<li>否则会判断任务队列是否已满，如果任务队列没满，则将任务放入任务队列中等待执行；</li>
+<li>如果任务队列也已满，则会判断线程数是否达到最大线程数，如果没有则会创建一个新线程并执行任务；</li>
+<li>否则的话则会通过拒绝策略来处理任务。</li>
+<li>当线程执行完任务后，会再从任务队列中取任务执行，此时非核心线程会设置超时时间，如果空闲时间达到了超时时间则回收线程。</li>
+</ol>
+<h4 id="实现Runnable接口和Callable接口的区别"><a href="#实现Runnable接口和Callable接口的区别" class="headerlink" title="实现Runnable接口和Callable接口的区别"></a>实现Runnable接口和Callable接口的区别</h4><ol>
+<li>实现Runnable接口需要重写Run()方法，该方法没有返回值；而实现Callable接口需要重写Call()方法，有返回值</li>
+<li>run()方法不能抛出异常，需要在方法内部try,catch解决；Call()方法可以抛出异常。</li>
+</ol>
+<h4 id="AQS是什么？AQS的三大组件？"><a href="#AQS是什么？AQS的三大组件？" class="headerlink" title="AQS是什么？AQS的三大组件？"></a>AQS是什么？AQS的三大组件？</h4><p>AQS全称是 AbstractQueuedSynchronizer，是阻塞式锁和相关的同步器工具的框架</p>
+<p>特点：</p>
+<ol>
+<li>用state表示资源状态，通过内置的 <strong>线程等待队列</strong> 来完成获取资源线程的排队工作。</li>
+<li>使用CAS对state状态值进行原子操作实现对其值的修改</li>
+</ol>
+<p>AQS三个重要组件：</p>
+<p>1.Semaphore</p>
+<p><code>synchronized</code> 和 <code>ReentrantLock</code> 都是一次只允许一个线程访问某个资源，而<code>Semaphore</code>(信号量)可以用来控制同时访问特定资源的线程数量。</p>
+<p>2.CountDownLatch</p>
+<p>线程同步工具，允许 count 个线程阻塞在一个地方，直至所有线程的任务都执行完毕。</p>
+<p>其中构造参数用来初始化等待计数值，await() 用来等待计数归零，countDown() 用来让计数减一</p>
+<p>3.CyclicBarrier</p>
+<p>用来进行线程协作，等待线程满足某个计数。</p>
+<p>构造时设置『计数个数』，每个线程执行到某个需要“同步”的时刻调用 await() 方法进行等待，当等待的线程数满足『计数个数』时，继续执行。</p>
+<h3 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h3><h4 id="Java运行时数据区包含哪些？哪些线程共享哪些不共享？哪些区域可能出现OOM？哪些区域不会出现OOM？"><a href="#Java运行时数据区包含哪些？哪些线程共享哪些不共享？哪些区域可能出现OOM？哪些区域不会出现OOM？" class="headerlink" title="Java运行时数据区包含哪些？哪些线程共享哪些不共享？哪些区域可能出现OOM？哪些区域不会出现OOM？"></a>Java运行时数据区包含哪些？哪些线程共享哪些不共享？哪些区域可能出现OOM？哪些区域不会出现OOM？</h4><p>Java运行时数据区在JDK1.8前后有所不同：</p>
+<img src="https://oss.javaguide.cn/github/javaguide/java/jvm/java-runtime-data-areas-jdk1.7.png" alt="Java 运行时数据区域（JDK1.7）" style="zoom:80%;" />
+
+<img src="https://oss.javaguide.cn/github/javaguide/java/jvm/java-runtime-data-areas-jdk1.8.png" alt="Java 运行时数据区域（JDK1.8 ）" style="zoom:80%;" />
+
+<p><strong>线程私有的：</strong></p>
+<ul>
+<li>程序计数器</li>
+<li>虚拟机栈</li>
+<li>本地方法栈</li>
+</ul>
+<p><strong>线程共享的：</strong></p>
+<ul>
+<li>堆</li>
+<li>方法区</li>
+<li>直接内存</li>
+</ul>
+<p>程序计数器是唯一一个不会出现OOM的内存区域，它的生命周期随着线程的创建而创建，随着线程的结束而死亡。</p>
+<p>下面对于Java运行时区域的一些概念进行总结：</p>
+<h5 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h5><p>Java堆是用来存储实例对象的，是垃圾回收的主要区域。</p>
+<p>方法区的一些内容也是放在了堆中的：类的静态变量和字符串常量池。</p>
+<p><img src="/image-20240221001543512.png" alt="image-20240221001543512"></p>
+<h5 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h5><p>当虚拟机要使用一个类时，它需要读取并解析 Class 文件获取相关信息，再将信息存入到方法区。方法区会存储已被虚拟机加载的 <strong>类信息、字段信息、方法信息、常量、静态变量、即时编译器编译后的代码缓存等数据</strong>。</p>
+<p>JVM规定需要有方法区这样一个区域，具体如何实现则由虚拟机自己决定，方法区和永久代以及元空间的关系很像 Java 中接口和类的关系，类实现了接口，这里的类就可以看作是永久代和元空间，接口可以看作是方法区，也就是说永久代以及元空间是 HotSpot 虚拟机对虚拟机规范中方法区的两种实现方式。并且，永久代是 JDK 1.8 之前的方法区实现，JDK 1.8 及以后方法区的实现变成了元空间。</p>
+<p><img src="https://oss.javaguide.cn/github/javaguide/java/jvm/method-area-implementation.png" alt="HotSpot 虚拟机方法区的两种实现"></p>
+<p>为什么要用永久代替换元空间？</p>
+<ol>
+<li>永久代是在堆中的，受限于堆内存的限制，很难设置合理的大小。而元空间使用的是本地内存，仅受本机可用内存的限制，能加载的类就更多了。</li>
+<li>在 JDK8，合并 HotSpot 和 JRockit 的代码时, JRockit 从来没有一个叫永久代的东西, 合并之后就没有必要额外的设置这么一个永久代的地方了。</li>
+</ol>
+<h4 id="字符串常量池在什么位置（JDK1-7-之前在永久代，JDK1-7-在堆）？JDK-1-7-为什么要将字符串常量池移动到堆中？"><a href="#字符串常量池在什么位置（JDK1-7-之前在永久代，JDK1-7-在堆）？JDK-1-7-为什么要将字符串常量池移动到堆中？" class="headerlink" title="字符串常量池在什么位置（JDK1.7 之前在永久代，JDK1.7 在堆）？JDK 1.7 为什么要将字符串常量池移动到堆中？"></a>字符串常量池在什么位置（JDK1.7 之前在永久代，JDK1.7 在堆）？JDK 1.7 为什么要将字符串常量池移动到堆中？</h4><p>主要是因为永久代（方法区实现）的 GC 回收效率太低，只有在整堆收集 (Full GC)的时候才会被执行 GC。Java 程序中通常会有大量的被创建的字符串等待回收，将字符串常量池放到堆中，能够更高效及时地回收字符串内存。</p>
+<h4 id="堆空间的基本结构了解吗？什么情况下对象会进入老年代？"><a href="#堆空间的基本结构了解吗？什么情况下对象会进入老年代？" class="headerlink" title="堆空间的基本结构了解吗？什么情况下对象会进入老年代？"></a>堆空间的基本结构了解吗？什么情况下对象会进入老年代？</h4><p><img src="https://oss.javaguide.cn/github/javaguide/java/jvm/hotspot-heap-structure.png" alt="堆内存结构"></p>
+<p>堆空间的内存结构如上图所示，JDK1.8之前堆内存通常被划分为下面三部分：</p>
+<ol>
+<li>新生代内存，图中的Eden区，两个Survivor区S0和S1都属于新生代。</li>
+<li>老年代内存。</li>
+<li>永久代内存。</li>
+</ol>
+<p><strong>JDK 8 版本之后 PermGen(永久代) 已被 Metaspace(元空间) 取代，元空间使用的是本地内存。</strong></p>
+<p>对象进入老年代的情况：</p>
+<ol>
+<li>对象年龄到达阈值后进入老年代。</li>
+<li>如果进行Minor GC时发现存活的对象在survivor区存不下，那么把存活的对象存入老年代。</li>
+<li>大对象直接进入老年代。主要原因是新生代GC频繁，且经常采用复制算法，大对象复制起来开销太大。</li>
+<li>动态年龄判断，Survivor区域里现在有一批对象，年龄1 + 年龄2 +…+年龄n 多个年龄对象总和超过了Survivor区域的50%，此时就会 把年龄n(含)以上 的对象都放入老年代。</li>
+</ol>
+<h4 id="直接内存有什么用？"><a href="#直接内存有什么用？" class="headerlink" title="直接内存有什么用？"></a>直接内存有什么用？</h4><p>直接内存是在Java堆外的、直接向系统申请的内存区间。直接内存常用于IO操作，直接内存能够被Java程序直接访问，操作系统也可以直接使用，在进行IO操作时就会少一次从系统缓冲区拷贝到用户缓冲区的过程。</p>
+<h4 id="Java对象的创建过程⭐⭐"><a href="#Java对象的创建过程⭐⭐" class="headerlink" title="Java对象的创建过程⭐⭐"></a>Java对象的创建过程⭐⭐</h4><h5 id="Step1：类加载检查"><a href="#Step1：类加载检查" class="headerlink" title="Step1：类加载检查"></a>Step1：类加载检查</h5><p>首先要做的是检查这个类是否已经被加载、解析和初始化过，如果没有则应先执行相应的类加载过程。</p>
+<h5 id="Step2：分配内存"><a href="#Step2：分配内存" class="headerlink" title="Step2：分配内存"></a>Step2：分配内存</h5><p>在经过类加载检查后，虚拟机将为新生对象分配内存。从堆中分配内存有“指针碰撞”和“空闲列表”两种方式，选择哪种方式由Java堆是否规整决定，而Java堆是否规整又与垃圾回收器是否带有整理功能决定。</p>
+<p>内存分配的两种方式：</p>
+<p>指针碰撞： </p>
+<ul>
+<li>适用场合：堆内存规整（即没有内存碎片）的情况下。</li>
+<li>原理：用过的内存全部整合到一边，没有用过的内存放在另一边，中间有一个分界指针，只需要向着没用过的内存方向将该指针移动对象内存大小位置即可。</li>
+<li>使用该分配方式的 GC 收集器：Serial, ParNew</li>
+</ul>
+<p>空闲列表： </p>
+<ul>
+<li>适用场合：堆内存不规整的情况下。</li>
+<li>原理：虚拟机会维护一个列表，该列表中会记录哪些内存块是可用的，在分配的时候，找一块儿足够大的内存块儿来划分给对象实例，最后更新列表记录。</li>
+<li>使用该分配方式的 GC 收集器：CMS</li>
+</ul>
+<h5 id="Step3：初始化零值"><a href="#Step3：初始化零值" class="headerlink" title="Step3：初始化零值"></a>Step3：初始化零值</h5><p>内存分配完成后，虚拟机需要将分配的内存空间都初始化为零值，这一步操作保证了对象的实例字段在 Java 代码中可以不赋初始值就直接使用，程序能访问到这些字段的数据类型所对应的零值。</p>
+<h5 id="Step4：设置对象头"><a href="#Step4：设置对象头" class="headerlink" title="Step4：设置对象头"></a>Step4：设置对象头</h5><p>初始化零值完成后，虚拟机会设置对象头，对象头中存放了类的元数据信息、对象的哈希码、对象的GC分代年龄等信息。</p>
+<h5 id="Step5：执行init方法"><a href="#Step5：执行init方法" class="headerlink" title="Step5：执行init方法"></a>Step5：执行init方法</h5><p>在上面的工作完成后，一个新的对象已经产生了，这是应该执行对象的实例构造方法，去按照程序员的意愿初始化对象。</p>
+<h4 id="谈谈你对-Minor-GC、还有-Full-GC-的理解。Minor-GC-与-Full-GC-分别在什么时候发⽣？-Minor-GC-会发⽣-stop-the-world-现象吗？"><a href="#谈谈你对-Minor-GC、还有-Full-GC-的理解。Minor-GC-与-Full-GC-分别在什么时候发⽣？-Minor-GC-会发⽣-stop-the-world-现象吗？" class="headerlink" title="谈谈你对 Minor GC、还有 Full GC 的理解。Minor GC 与 Full GC 分别在什么时候发⽣？ Minor GC 会发⽣ stop the world 现象吗？"></a>谈谈你对 Minor GC、还有 Full GC 的理解。Minor GC 与 Full GC 分别在什么时候发⽣？ Minor GC 会发⽣ stop the world 现象吗？</h4><p>Minor GC：回收新生代，因为新生代对象存活时间很短，因此Minor GC会频繁执行，执行速度一般也会比较快</p>
+<p>Full GC：回收新生代和老年代，老年代对象存活时间长，因此Full GC一般情况下应该很少执行，执行速度会慢很多</p>
+<p>Minor GC的触发条件：</p>
+<ul>
+<li>当Eden区满了之后就会触发Minor GC</li>
+</ul>
+<p>Full GC的触发场景见下一问</p>
+<p>Minor GC也会发生STW</p>
+<h4 id="Full-GC的触发机制？"><a href="#Full-GC的触发机制？" class="headerlink" title="Full GC的触发机制？"></a><strong>Full GC的触发机制？</strong></h4><ol>
+<li>调用System.gc方法，系统建议执行Full GC，但虚拟机不一定会执行</li>
+<li>老年代空间不足</li>
+<li>空间分配担保失败</li>
+<li>JDK1.7及以前永久代空间不足</li>
+</ol>
+<h4 id="如何判断对象是否死亡（引⽤计数法和可达性分析算法两种⽅法）？"><a href="#如何判断对象是否死亡（引⽤计数法和可达性分析算法两种⽅法）？" class="headerlink" title="如何判断对象是否死亡（引⽤计数法和可达性分析算法两种⽅法）？"></a>如何判断对象是否死亡（引⽤计数法和可达性分析算法两种⽅法）？</h4><h5 id="1-引用计数法"><a href="#1-引用计数法" class="headerlink" title="1. 引用计数法"></a>1. 引用计数法</h5><p>原理：给每个对象分配一个计数器  当对象增加一个引用时计数器+1  减少一个引用时计数器-1 计数器为0的对象就是可以被回收的对象</p>
+<p>缺点：对象出现<strong>循环引用</strong>的情况下，此时引用计数器永远不为 0，导致无法对它们进行回收。因为循环引用的存在，因此Java 虚拟机不使用引用计数算法。</p>
+<h5 id="2-可达性分析算法"><a href="#2-可达性分析算法" class="headerlink" title="2.可达性分析算法"></a>2.可达性分析算法</h5><p>原理：以多个<strong>GC Roots</strong> 为起始点进行搜索，可达的对象都是存活的，不可达的对象可被回收。</p>
+<p>作为GC Roots 的对象包括：</p>
+<ul>
+<li>虚拟机栈中局部变量表引用的对象</li>
+<li>本地方法栈中引用的对象</li>
+<li>方法区中类静态属性引用的对象</li>
+<li>方法区中常量引用的对象</li>
+</ul>
+<h4 id="四种引用类型知道吗？"><a href="#四种引用类型知道吗？" class="headerlink" title="四种引用类型知道吗？"></a>四种引用类型知道吗？</h4><ul>
+<li>强引用：new的都是强引用 只要存活就不会被垃圾回收</li>
+<li>软引用： JVM认为内存不足时会回收软引用指向的对象</li>
+<li>弱引用：无论内存足不足 JVM都会回收弱引用指向的对象</li>
+<li>虚引用：任何时候都可能被JVM回收</li>
+</ul>
+<h4 id="垃圾收集有哪些算法，各⾃的特点？"><a href="#垃圾收集有哪些算法，各⾃的特点？" class="headerlink" title="垃圾收集有哪些算法，各⾃的特点？"></a>垃圾收集有哪些算法，各⾃的特点？</h4><h5 id="标记-清除算法"><a href="#标记-清除算法" class="headerlink" title="标记-清除算法"></a>标记-清除算法</h5><p>标记-清除（Mark-and-Sweep）算法分为“标记（Mark）”和“清除（Sweep）”阶段：首先标记出所有不需要回收的对象，在标记完成后统一回收掉所有没有被标记的对象。</p>
+<p>它是最基础的收集算法，后续的算法都是对其不足进行改进得到。这种垃圾收集算法会带来两个明显的问题：</p>
+<ol>
+<li><strong>效率问题</strong>：标记和清除两个过程效率都不高。</li>
+<li><strong>空间问题</strong>：标记清除后会产生大量不连续的内存碎片。</li>
+</ol>
+<p><img src="https://oss.javaguide.cn/github/javaguide/java/jvm/mark-and-sweep-garbage-collection-algorithm.png" alt="标记-清除算法"></p>
+<h5 id="复制算法"><a href="#复制算法" class="headerlink" title="复制算法"></a>复制算法</h5><p>为了解决标记-清除算法的效率和内存碎片问题，复制（Copying）收集算法出现了。它可以将内存分为大小相同的两块，每次使用其中的一块。当这一块的内存使用完后，就将还存活的对象复制到另一块去，然后再把使用的空间一次清理掉。这样就使每次的内存回收都是对内存区间的一半进行回收。</p>
+<p><img src="https://oss.javaguide.cn/github/javaguide/java/jvm/copying-garbage-collection-algorithm.png" alt="复制算法"></p>
+<p>虽然改进了标记-清除算法，但依然存在下面这些问题：</p>
+<ul>
+<li><strong>可用内存变小</strong>：可用内存缩小为原来的一半。</li>
+<li><strong>不适合老年代</strong>：如果存活对象数量比较大，复制性能会变得很差。</li>
+</ul>
+<h5 id="标记-整理算法"><a href="#标记-整理算法" class="headerlink" title="标记-整理算法"></a>标记-整理算法</h5><p>标记-整理是根据老年代的特点提出的一种标记算法，标记过程与“标记-清除“算法一样，但后续步骤不是直接对可回收对象回收，而是让所有存活的对象向一端移动，然后直接清理掉边界以外的内存。</p>
+<p><img src="https://oss.javaguide.cn/github/javaguide/java/jvm/mark-and-compact-garbage-collection-algorithm.png" alt="标记-整理算法"></p>
+<p>由于多了整理这一步，因此效率也不高，适合老年代这种垃圾回收频率不是很高的场景。</p>
+<h4 id="垃圾收集器"><a href="#垃圾收集器" class="headerlink" title="垃圾收集器"></a>垃圾收集器</h4><p>垃圾收集算法是方法论 垃圾收集器则是垃圾回收的具体实现 它们会使用不同的垃圾回收算法   我们需要根据具体场景选择合适的垃圾收集器。</p>
+<p>分类：</p>
+<ul>
+<li><strong>单线程与多线程：</strong>单线程指的是垃圾收集器只使用一个线程，而多线程使用多个线程</li>
+<li><strong>串行与并行：</strong>串行是指垃圾收集器与用户程序交替执行，在执行垃圾收集的时候停顿用户程序；并行指的是垃圾收集器和用户程序同时执行。CMS和G1是并行的，其他都是串行。</li>
+</ul>
+<img src="https://cdn.nlark.com/yuque/0/2022/png/12395513/1657072425889-6c1e10c2-838e-41f5-afaf-f1afc15427e2.png?x-oss-process=image%2Fresize%2Cw_721%2Climit_0" alt="image.png" style="zoom:80%;" />
+
+<h4 id="讲一下CMS收集器"><a href="#讲一下CMS收集器" class="headerlink" title="讲一下CMS收集器"></a>讲一下CMS收集器</h4><p>多线程  <strong>并发</strong>  低停顿   采用标记-清除算法  应用于老年代</p>
+<p><strong>以获取最短回收停顿时间为目标</strong> 适用于关注服务响应速度的的服务端虚拟机</p>
+<p>分以下四个步骤：</p>
+<ol>
+<li>初始标记：暂停所有其他线程，记录下与root直接相连的对象，速度很快</li>
+<li>并发标记：同时开启GC线程和用户线程，从 GC Roots 的直接关联对象开始遍历整个对象图的过程，<strong>这个过程耗时较长，但是不需要停顿用户线程。</strong></li>
+<li>重新标记：修正并发标记期间，因用户程序继续运作而导致标记产生变动的那部分对象的标记记录。这个阶段的停顿时间也很短，但会比初始标记慢一些。</li>
+<li>并发清除：清理掉标记的已经死亡的对象，由于不需要移动对象，所以这个阶段也可以和用户线程同时并发。</li>
+</ol>
+<p>缺点：</p>
+<ul>
+<li><p>由于CMS收集器无法处理“浮动垃圾”（Floating Garbage），有可能出现“Con-current ModeFailure”失败进而导致另一次完全“Stop The World”的Full GC的产生</p>
+</li>
+<li><p>CMS是一款基于“标记-清除”算法实现的收集器，意味有大量空间碎片产生。空间碎片过多时，将会给大对象分配带来很大麻烦，往往会出现老年代还有很多剩余空间，但就是无法找到足够大的连续空间来分配当前对象，而不得不提前触发一次Full GC的情况</p>
+</li>
+</ul>
+<h4 id="讲一下G1收集器？有什么缺点？"><a href="#讲一下G1收集器？有什么缺点？" class="headerlink" title="讲一下G1收集器？有什么缺点？"></a>讲一下G1收集器？有什么缺点？</h4><p>G1的特点如下：</p>
+<ul>
+<li>基于Region的内存布局：G1不再坚持固定大小以及固定数量的分代区域划分，而是把连续的Java堆划分为多个大小相等的独立区域（Region），<strong>每一个Region都可以根据需要，扮演新生代的Eden空间、Survivor空间，或者老年代空间</strong>。</li>
+<li>Mixed GC的思想：在G1收集器出现之前的所有其他收集器，垃圾收集的目标范围要么是整个新生代（Minor GC），要么就是整个老年代（Major GC），或者整个Java堆（Full GC）。而G1可以面向堆内存任何部分进行回收，衡量标准不再是它属于哪个分代，而是哪块内存中存放的垃圾数量最多，回收收益最大</li>
+<li>可预测的时间停顿模型：G1可以由用户自己去设置STW的最大时间，在进行垃圾收集的时候，会根据每个Region<strong>预计垃圾收集所需时间</strong>与<strong>预计回收内存大小</strong>的占比来选择对哪些区域进行回收，优先处理回收价值收益最大的那些Region，从而满足用户设定的目标停顿时间。</li>
+</ul>
+<p>G1回收的四个步骤：</p>
+<ul>
+<li>初始标记：标记一下GC Roots能直接关联到的对象</li>
+<li>并发标记：从GC Root开始对堆中对象进行可达性分析，递归扫描整个堆里的对象图，找出要回收的对象</li>
+<li>最终标记：对用户线程做另一个短暂的暂停，用于处理并发阶段结束后仍遗留下来的最后那少量的SATB记录。</li>
+<li>筛选回收：负责更新Region的统计数据，对各个Region的回收价值和成本进行排序，根据用户所期望的停顿时间来制定回收计划，可以自由选择任意多个Region构成回收集，然后把决定回收的那一部分Region的存活对象复制到空的Region中，再清理掉整个旧Region的全部空间。</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/12395513/1661341347229-a5749e8e-c5f3-483c-a3d3-8444216b998d.png?x-oss-process=image/resize,w_730,limit_0" alt="image.png"></p>
 
       
     </div>
